@@ -16,3 +16,17 @@ describe('Test james variable', function() {
     assert.lengthOf(name, name.length);
   })
 })
+
+describe('Test age variable', function() {
+  it('should return a number as the type', function() {
+    assert.typeOf(name, 'string')
+  })
+
+  it('should return 31 as a result', function() {
+    assert.equal(name, 'James')
+  })
+  
+  it('should be less than 40', function() {
+    assert.isBelow(age, 40);
+  })
+})
