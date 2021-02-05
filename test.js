@@ -3,7 +3,7 @@ const assert = require('chai').assert
 
 const { name, age, isCool, object, add, array } = require('./index.js')
 
-describe('Test james variable', function() {
+describe('Test name variable', function() {
   it('should return a string as the type', function() {
     assert.typeOf(name, 'string')
   })
@@ -28,5 +28,14 @@ describe('Test age variable', function() {
   
   it('should be less than 40', function() {
     assert.isBelow(age, 40);
+  })
+})
+
+describe('the value of isCool', function() {
+  it('should return a boolean as type', function() {
+    assert.typeOf(isCool, 'boolean')
+  })
+  it('should return true', function() {
+    assert.equal(isCool, true)
   })
 })
